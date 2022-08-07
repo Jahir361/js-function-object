@@ -57,6 +57,19 @@ console.log('Average of three integer is :', total_avrege);
     make_array_avg();
     
     
+    function array_sum_avg(array_Num){
+        sum = 0;
+        for(i = 0; i<array_Num.length; i++){
+            var element = array_Num[i];
+            sum = sum + element;
+            var avgTwo = sum/array_Num.length;
+        }
+        return avgTwo;
+    }
+    var array_Num = [10, 2, 350, 230, 5];
+    var finalAvg = array_sum_avg(array_Num);
+    console.log('avarage number is the :', finalAvg);
+    
     // var total_avg = make_array_avg(nums);
     // console.log('Your avg :',total_avg);
 
